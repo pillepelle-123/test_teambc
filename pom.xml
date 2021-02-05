@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"xsi:schemaLocation="http://maven.apache.org/POM/4.0.0http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>com.company.teamC</groupId>
+<artifactId>rootPom</artifactId>
+<version>1.0-SNAPSHOT</version>
+<packaging>pom</packaging>
+<modules>
+	<module>webSiteC</module>
+	<module>libraryB</module>
+</modules>
+<distributionManagement>
+<repository>
+	<uniqueVersion>true</uniqueVersion>
+	<id>releases</id>
+	<name>releases</name>
+	<url>http://studentpc:8081/repository/releases</url>
+</repository>
+<snapshotRepository>
+	<uniqueVersion>false</uniqueVersion>
+	<id>snapshots</id>
+	<name>snapshots</name>
+	<url>http://studentpc:8081/repository/snapshots</url>
+</snapshotRepository>
+</distributionManagement>
+</project>
